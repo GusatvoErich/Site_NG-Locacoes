@@ -1,0 +1,1237 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root {
+    --rosa-ng: #e83e8c;
+    --rosa-ng-escuro: #c7276e;
+
+    --roxo-ng: #5a3d9e;
+    --roxo-ng-escuro: #452d7d;
+
+    --creme-ng: #fff1e8;
+    --lavanda-ng: #f4edff;
+
+    --texto-ng: #2e2933;
+}
+    html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+
+    background-color: #ffffff;
+
+    color: #333333;
+}
+
+
+/* CABEÇALHO */
+
+.cabecalho {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    padding: 20px 8%;
+
+    background-color: white;
+
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+
+.logo h1 {
+
+    font-size: 28px;
+
+    color: var(--rosa-ng);
+}
+
+.logo p {
+
+    font-size: 14px;
+
+    color: #666666;
+}
+
+/* MENU */
+
+.menu {
+
+    display: flex;
+
+    gap: 30px;
+}
+
+.menu a {
+
+    text-decoration: none;
+
+    color: #333333;
+
+    font-weight: bold;
+
+    transition: 0.3s;
+}
+.menu a:hover {
+    color: var(--roxo-ng);
+}
+/* BOTÃO DO MENU NO CELULAR */
+
+.menu-toggle {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 30px;
+    cursor: pointer;
+    color: #222222;
+}
+/* BANNER */
+
+.banner {
+    min-height: 520px;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    gap: 60px;
+
+    padding: 60px 8%;
+
+    background-color: var(--creme-ng);
+}
+
+
+.banner-texto {
+    flex: 1;
+    max-width: 650px;
+}
+.banner-imagem {
+    flex: 1;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+}
+
+
+.banner-imagem img {
+    width: 100%;
+
+    max-width: 480px;
+
+    height: auto;
+
+    display: block;
+
+    border-radius: 25px;
+
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12);
+}
+
+
+.destaque {
+
+    color: var(--rosa-ng);
+
+    font-weight: bold;
+
+    margin-bottom: 15px;
+}
+
+
+.banner h2 {
+
+    font-size: 52px;
+
+    line-height: 1.1;
+
+    margin-bottom: 20px;
+
+    color: #222222;
+}
+
+
+.banner-texto > p {
+
+    font-size: 18px;
+
+    line-height: 1.6;
+
+    margin-bottom: 30px;
+}
+
+
+/* BOTÕES */
+
+.botoes-banner {
+
+    display: flex;
+
+    gap: 15px;
+}
+
+
+.botao {
+
+    display: inline-block;
+
+    padding: 15px 25px;
+
+    border-radius: 8px;
+
+    text-decoration: none;
+
+    font-weight: bold;
+
+    transition: 0.3s;
+}
+
+
+.botao-principal {
+
+    background-color: var(--rosa-ng);
+
+    color: white;
+}
+
+
+.botao-principal:hover {
+
+    background-color: var(--rosa-ng-escuro);
+}
+
+
+.botao-secundario {
+    border: 2px solid var(--roxo-ng);
+    color: var(--roxo-ng);
+    background-color: white;
+}
+
+.botao-secundario:hover {
+    background-color: var(--roxo-ng);
+    color: white;
+}
+/* ========================================
+   SEÇÃO BRINQUEDOS
+======================================== */
+
+.brinquedos {
+
+    padding: 80px 8%;
+
+    background-color: #ffffff;
+}
+
+
+.titulo-secao {
+
+    text-align: center;
+
+    max-width: 700px;
+
+    margin: 0 auto 50px;
+}
+
+
+.titulo-secao p {
+
+    color: var(--rosa-ng);
+
+    font-weight: bold;
+
+    margin-bottom: 10px;
+}
+
+
+.titulo-secao h2 {
+
+    font-size: 40px;
+
+    color: #222222;
+
+    margin-bottom: 15px;
+}
+
+
+.titulo-secao span {
+
+    font-size: 17px;
+
+    color: #666666;
+
+    line-height: 1.6;
+}
+
+
+/* LISTA DOS BRINQUEDOS */
+
+.lista-brinquedos {
+
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 30px;
+}
+
+
+/* CARD */
+
+.card-brinquedo {
+
+    background-color: white;
+
+    border-radius: 15px;
+
+    overflow: hidden;
+
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.10);
+
+    transition: 0.3s;
+}
+
+
+.card-brinquedo:hover {
+
+    transform: translateY(-8px);
+
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+
+/* ÁREA DA FOTO */
+
+.imagem-brinquedo {
+    height: 230px;
+    background-color: var(--creme-ng);
+    overflow: hidden;
+}
+
+.imagem-brinquedo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+/* TEXTO DO CARD */
+
+.conteudo-card {
+
+    padding: 25px;
+}
+
+
+.conteudo-card h3 {
+
+    font-size: 23px;
+
+    margin-bottom: 12px;
+
+    color: #222222;
+}
+
+
+.conteudo-card p {
+
+    color: #666666;
+
+    line-height: 1.6;
+
+    margin-bottom: 22px;
+}
+
+
+/* BOTÃO DO CARD */
+
+.botao-card {
+
+    display: inline-block;
+
+    text-decoration: none;
+
+    color: var(--rosa-ng);
+
+    font-weight: bold;
+
+    padding: 12px 18px;
+
+    border: 2px solid var(--rosa-ng);
+
+    border-radius: 8px;
+
+    transition: 0.3s;
+}
+
+
+.botao-card:hover {
+
+    background-color: var(--rosa-ng);
+
+    color: white;
+}
+/* ========================================
+   COMO FUNCIONA
+======================================== */
+
+.como-funciona {
+    padding: 80px 8%;
+    background-color: var(--lavanda-ng);
+}
+
+
+.passos {
+
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 25px;
+
+    margin-top: 50px;
+}
+
+
+.passo {
+
+    background-color: white;
+
+    padding: 35px 25px;
+
+    border-radius: 15px;
+
+    text-align: center;
+
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+
+    transition: 0.3s;
+}
+
+
+.passo:hover {
+
+    transform: translateY(-5px);
+}
+
+
+.numero-passo {
+
+    width: 55px;
+
+    height: 55px;
+
+    margin: 0 auto 20px;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    border-radius: 50%;
+
+    background-color: var(--roxo-ng);
+
+    color: white;
+
+    font-size: 22px;
+
+    font-weight: bold;
+}
+
+
+.passo h3 {
+
+    font-size: 20px;
+
+    margin-bottom: 15px;
+
+    color: #222222;
+}
+
+
+.passo p {
+
+    color: #666666;
+
+    line-height: 1.6;
+}
+/* ========================================
+   WHATSAPP FLUTUANTE
+======================================== */
+
+.whatsapp-flutuante {
+
+    position: fixed;
+
+    right: 25px;
+
+    bottom: 25px;
+
+    z-index: 1000;
+
+    background-color: #25D366;
+
+    color: white;
+
+    text-decoration: none;
+
+    font-weight: bold;
+
+    padding: 15px 20px;
+
+    border-radius: 50px;
+
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.20);
+
+    transition: 0.3s;
+}
+
+
+.whatsapp-flutuante:hover {
+
+    transform: scale(1.05);
+
+    background-color: #1ebe5d;
+}
+/* ========================================
+   SOBRE
+======================================== */
+
+.sobre {
+
+    padding: 90px 8%;
+
+    background-color: #ffffff;
+}
+
+
+.sobre-conteudo {
+
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 70px;
+
+    align-items: center;
+}
+
+
+.subtitulo {
+
+    color: var(--rosa-ng);
+
+    font-weight: bold;
+
+    margin-bottom: 15px;
+}
+
+
+.sobre-texto h2 {
+
+    font-size: 40px;
+
+    line-height: 1.2;
+
+    margin-bottom: 25px;
+
+    color: #222222;
+}
+
+
+.sobre-texto > p {
+
+    color: #666666;
+
+    font-size: 17px;
+
+    line-height: 1.7;
+
+    margin-bottom: 20px;
+}
+
+
+.sobre-texto .botao {
+
+    margin-top: 10px;
+}
+
+
+/* FOTO SOBRE */
+
+.imagem-sobre {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+
+    display: block;
+
+    margin: 0 auto;
+
+    border-radius: 20px;
+
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12);
+}
+
+
+/* ========================================
+   CONTATO
+======================================== */
+
+.contato {
+
+    padding: 90px 8%;
+
+    background-color: var(--creme-ng);
+}
+
+
+.contato-opcoes {
+
+    display: flex;
+
+    justify-content: center;
+
+    gap: 30px;
+
+    margin-top: 45px;
+}
+
+
+.contato-card {
+
+    width: 320px;
+
+    background-color: white;
+
+    padding: 35px;
+
+    border-radius: 15px;
+
+    text-align: center;
+
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+}
+
+
+.contato-icone {
+
+    display: block;
+
+    font-size: 48px;
+
+    margin-bottom: 15px;
+}
+.icone-whatsapp {
+    color: #25D366;
+}
+
+.icone-instagram {
+    color: #E1306C;
+}
+
+.icone-localizacao {
+    color: var(--roxo-ng);
+}
+
+
+.contato-card h3 {
+
+    font-size: 22px;
+
+    margin-bottom: 10px;
+}
+
+
+.contato-card p {
+
+    color: #666666;
+
+    line-height: 1.6;
+
+    margin-bottom: 15px;
+}
+
+
+.contato-card a {
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+
+/* WHATSAPP */
+
+.link-whatsapp {
+    color: #25D366;
+}
+
+.link-whatsapp:hover {
+    color: #128C7E;
+}
+
+
+/* INSTAGRAM */
+
+.link-instagram {
+    color: #E1306C;
+}
+
+.link-instagram:hover {
+    color: #C13584;
+}
+
+/* ========================================
+   RODAPÉ
+======================================== */
+
+.rodape {
+    background-color: var(--roxo-ng-escuro);
+    color: white;
+    padding: 55px 8% 25px;
+}
+
+.rodape-conteudo {
+    display: grid;
+    grid-template-columns: 1.4fr 1fr 1fr;
+    gap: 60px;
+    align-items: start;
+}
+
+
+/* MARCA */
+
+.rodape-marca h2 {
+    font-size: 28px;
+    color: white;
+    margin-bottom: 5px;
+}
+
+.rodape-marca > p {
+    color: white;
+    font-weight: bold;
+    margin-bottom: 18px;
+}
+
+.rodape-marca span {
+    display: block;
+    max-width: 350px;
+    color: #ddd6ec;
+    line-height: 1.6;
+}
+
+
+/* COLUNAS */
+
+.rodape-coluna {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.rodape-coluna h3 {
+    color: white;
+    margin-bottom: 8px;
+}
+
+.rodape-coluna a {
+    color: #ddd6ec;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.rodape-coluna a:hover {
+    color: white;
+    transform: translateX(3px);
+}
+
+.rodape-coluna p {
+    color: #ddd6ec;
+    line-height: 1.5;
+}
+
+
+/* PARTE INFERIOR */
+
+.rodape-base {
+    margin-top: 40px;
+    padding-top: 20px;
+    border-top: 1px solid rgba(255, 255, 255, 0.18);
+    text-align: center;
+}
+
+.rodape-base p {
+    color: #ddd6ec;
+    font-size: 14px;
+}
+/* ========================================
+   RESPONSIVIDADE - TABLETS
+======================================== */
+
+@media (max-width: 900px) {
+
+    /* CABEÇALHO */
+
+   .cabecalho {
+    position: relative;
+    padding: 18px 5%;
+    display: block;
+    text-align: left;
+}
+
+.logo {
+    text-align: left;
+}
+
+.menu-toggle {
+    display: block;
+    position: absolute;
+    top: 30px;
+    right: 25px;
+
+    background: none;
+    border: none;
+
+    font-size: 34px;
+    color: #222222;
+
+    cursor: pointer;
+    z-index: 1001;
+}
+
+.menu {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 20px;
+    gap: 0;
+}
+
+.menu.ativo {
+    display: flex;
+}
+
+.menu a {
+    width: 100%;
+    padding: 15px;
+    text-align: center;
+    border-top: 1px solid #eeeeee;
+}
+
+
+    /* BANNER */
+
+    .banner {
+        min-height: auto;
+        padding: 70px 6%;
+    }
+
+
+    .banner h2 {
+        font-size: 42px;
+    }
+
+
+    /* BRINQUEDOS */
+
+    .lista-brinquedos {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+
+    /* COMO FUNCIONA */
+
+    .passos {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+
+    /* SOBRE */
+
+    .sobre-conteudo {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+
+    /* CONTATO */
+
+    .contato-opcoes {
+        flex-wrap: wrap;
+    }
+
+}
+
+
+/* ========================================
+   RESPONSIVIDADE - CELULAR
+======================================== */
+
+@media (max-width: 600px) {
+    .menu-toggle {
+    display: block;
+}
+.imagem-sobre {
+    width: 100%;
+    max-width: 100%;
+    border-radius: 15px;
+}
+
+.menu {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    gap: 0;
+    margin-top: 15px;
+}
+
+.menu.ativo {
+    display: flex;
+}
+
+.menu a {
+    width: 100%;
+    padding: 15px;
+    text-align: center;
+    border-top: 1px solid #eeeeee;
+}
+
+    /* CABEÇALHO */
+
+   .cabecalho {
+    padding: 18px 5%;
+    display: grid;
+    grid-template-columns: 1fr auto;
+    align-items: center;
+    text-align: left;
+}
+.logo {
+    text-align: left;
+}
+
+.menu {
+    grid-column: 1 / -1;
+}
+
+
+    .logo h1 {
+        font-size: 25px;
+    }
+
+
+    .menu {
+        gap: 15px;
+    }
+
+
+    .menu a {
+        font-size: 14px;
+    }
+
+
+    /* BANNER */
+
+    .banner {
+    padding: 60px 5%;
+
+    flex-direction: column;
+
+    align-items: stretch;
+
+    gap: 40px;
+}
+    .banner-imagem {
+    width: 100%;
+}
+
+
+.banner-imagem img {
+    width: 100%;
+    max-width: 100%;
+}
+
+
+    .banner h2 {
+        font-size: 36px;
+    }
+
+
+    .banner-texto > p {
+        font-size: 16px;
+    }
+
+
+    /* BOTÕES DO BANNER */
+
+    .botoes-banner {
+        flex-direction: column;
+    }
+
+
+    .botao {
+        text-align: center;
+        width: 100%;
+    }
+
+
+    /* TÍTULOS */
+
+    .titulo-secao h2 {
+        font-size: 32px;
+    }
+
+
+    /* BRINQUEDOS */
+
+    .brinquedos {
+        padding: 60px 5%;
+    }
+
+
+    .lista-brinquedos {
+        grid-template-columns: 1fr;
+    }
+
+
+    .imagem-brinquedo {
+        height: 250px;
+    }
+
+
+    /* COMO FUNCIONA */
+
+    .como-funciona {
+        padding: 60px 5%;
+    }
+
+
+    .passos {
+        grid-template-columns: 1fr;
+    }
+
+
+    /* SOBRE */
+
+    .sobre {
+        padding: 60px 5%;
+    }
+
+
+    .sobre-texto h2 {
+        font-size: 32px;
+    }
+
+    /* CONTATO */
+
+    .contato {
+        padding: 60px 5%;
+    }
+
+
+    .contato-opcoes {
+        flex-direction: column;
+        align-items: center;
+    }
+
+
+    .contato-card {
+        width: 100%;
+    }
+
+/* MARCA */
+
+.rodape-marca h2 {
+
+    font-size: 28px;
+
+    color: white;
+
+    margin-bottom: 5px;
+}
+
+
+.rodape-marca > p {
+
+    color: #ffffff;
+
+    font-weight: bold;
+
+    margin-bottom: 18px;
+}
+
+
+.rodape-marca span {
+
+    display: block;
+
+    max-width: 350px;
+
+    color: #ddd6ec;
+
+    line-height: 1.6;
+}
+
+
+/* COLUNAS */
+
+.rodape-coluna {
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 10px;
+}
+
+
+.rodape-coluna h3 {
+
+    color: white;
+
+    margin-bottom: 8px;
+}
+
+
+.rodape-coluna a {
+
+    color: #ddd6ec;
+
+    text-decoration: none;
+
+    transition: 0.3s;
+}
+
+
+.rodape-coluna a:hover {
+
+    color: #ffffff;
+
+    transform: translateX(3px);
+}
+
+
+.rodape-coluna p {
+
+    color: #ddd6ec;
+
+    line-height: 1.5;
+}
+
+
+/* PARTE INFERIOR */
+
+.rodape-base {
+
+    margin-top: 40px;
+
+    padding-top: 20px;
+
+    border-top: 1px solid rgba(255, 255, 255, 0.18);
+
+    text-align: center;
+}
+
+
+.rodape-base p {
+
+    color: #ddd6ec;
+
+    font-size: 14px;
+}
+    /* WHATSAPP */
+
+   .whatsapp-flutuante {
+    right: 12px;
+    bottom: 12px;
+    padding: 10px 14px;
+    font-size: 12px;
+    border-radius: 30px;
+}
+}
+.link-whatsapp-card {
+    color: #25D366;
+    font-weight: 700;
+    text-decoration: none;
+}
+/* ========================================
+   CORREÇÃO FINAL - RODAPÉ NO CELULAR
+======================================== */
+
+@media (max-width: 600px) {
+
+    .rodape {
+        width: 100%;
+        padding: 40px 20px 85px;
+        overflow: hidden;
+    }
+
+    .rodape-conteudo {
+        display: grid !important;
+        grid-template-columns: 1fr !important;
+        width: 100%;
+        gap: 35px;
+        text-align: center;
+    }
+
+    .rodape-marca,
+    .rodape-coluna {
+        width: 100%;
+        min-width: 0;
+    }
+
+    .rodape-marca {
+        text-align: center;
+    }
+
+    .rodape-marca span {
+        display: block;
+        max-width: 300px;
+        margin: 0 auto;
+    }
+
+    .rodape-coluna {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .rodape-coluna a,
+    .rodape-coluna p {
+        width: 100%;
+        text-align: center;
+        overflow-wrap: normal;
+        word-break: normal;
+    }
+
+    .rodape-base {
+        width: 100%;
+        margin-top: 35px;
+        padding-top: 20px;
+        text-align: center;
+    }
+
+    .rodape-base p {
+        font-size: 12px;
+        line-height: 1.5;
+        white-space: normal;
+    }
+
+}
+html,
+body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
